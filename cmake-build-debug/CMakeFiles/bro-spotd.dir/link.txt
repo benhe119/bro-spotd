@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/bro-spotd.dir/src/main.cpp.o CMakeFiles/bro-spotd.dir/src/MonitoredFeature.cpp.o CMakeFiles/bro-spotd.dir/src/Dispotcher.cpp.o CMakeFiles/bro-spotd.dir/src/Dbuspotcher.cpp.o  -o ../bin/bro-spotd -lspot -lbroccoli -lpthread -liniparser 

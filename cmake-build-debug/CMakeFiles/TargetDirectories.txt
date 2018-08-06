@@ -1,0 +1,3 @@
+/home/asr/CLionProjects/bro-spotd2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/asr/CLionProjects/bro-spotd2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/asr/CLionProjects/bro-spotd2/cmake-build-debug/CMakeFiles/bro-spotd.dir
