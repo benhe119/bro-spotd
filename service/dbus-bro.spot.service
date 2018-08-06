@@ -6,5 +6,5 @@ Description=Bro-Spot D-Bus Server
 [Service]
 #Type=simple
 BusName=bro.spot
-ExecStart=/home/asr/CLionProjects/bro-spotd2/bin/bro-spotd -c /home/asr/CLionProjects/bro-spotd2/bin/bro-spotd.ini
+ExecStart=/usr/bin/bro-spotd -c /etc/bro-spotd/bro-spotd.ini
 PIDFile=/var/run/bro-spotd.pid

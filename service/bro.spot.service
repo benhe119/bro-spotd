@@ -1,5 +1,5 @@
 # /usr/share/dbus-1/services/
 [D-Bus Service]
 Name=bro.spot
-Exec=/home/asr/CLionProjects/bro-spotd2/bin/bro-spotd -c /home/asr/CLionProjects/bro-spotd2/bin/bro-spotd.ini
+Exec=/usr/bin/bro-spotd -c /etc/bro-spotd/bro-spotd.ini
 SystemdService=dbus-bro.spot.service

@@ -37,6 +37,7 @@ INTERFACE_DIR = $(CURDIR)/interface
 
 # install folders
 INSTALL_BIN_DIR = $(DESTDIR)/usr/bin
+INSTALL_CONF_DIR = $(DESTDIR)/etc/bro-spotd
 INSTALL_SYSTEMD_SERVICE_DIR = $(DESTDIR)/etc/systemd/user
 INSTALL_DBUS_SERVICE_DIR = $(DESTDIR)/usr/share/dbus-1/services
 INSTALL_DBUS_INTERFACE_DIR = $(DESTDIR)/usr/share/dbus-1/interfaces
@@ -83,7 +84,7 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(INC) $(LIB) $(foreach n,$^,$(OBJ_DIR)/$(n)) -o $(BIN_DIR)/$@ $(LDD);
 	@echo "[done]"
 
-install: install_bin install_services install_interface install_bro_script
+install: install_bin install_conf install_services install_interface install_bro_script
 
 install_bin:
 	@echo
@@ -91,6 +92,13 @@ install_bin:
 	@echo $(TARGET) "->" $(INSTALL_BIN_DIR)
 	mkdir -p $(INSTALL_BIN_DIR)
 	@install $(BIN_DIR)/$(TARGET) $(INSTALL_BIN_DIR)
+
+install_conf:
+	@echo
+	@echo "Installing configuration"
+	@echo $(BIN_DIR)/bro-spotd.ini "->" $(INSTALL_CONF_DIR)
+	mkdir -p $(INSTALL_CONF_DIR)
+	@install $(BIN_DIR)/bro-spotd.ini $(INSTALL_CONF_DIR)
 
 install_services:
 	@echo
