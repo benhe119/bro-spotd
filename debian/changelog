@@ -1,0 +1,11 @@
+bro-spotd (1.0-1ubuntu1) bionic; urgency=medium
+
+  * Initial release. Tested locally.
+
+ -- Alban Siffer <alban.siffer@irisa.fr>  Mon, 06 Aug 2018 15:12:52 +0200
+
+bro-spotd (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Alban Siffer <alban.siffer@irisa.fr>  Mon, 06 Aug 2018 10:05:20 +0200

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- In /usr/share/dbus-1/interfaces -->
+<!DOCTYPE node PUBLIC
+        "-//freedesktop//DTD D-Bus Object Introspection 1.0//EN"
+        "http://standards.freedesktop.org/dbus/1.0/introspect.dtd">
+<node>
+    <interface name="bro.spot.Common">
+        <annotation name="bro.spot.Common.DocString" value="Interface for the general purposes (not specific to a monitored feature)."/>
+        <method name="Features">
+            <annotation name="bro.spot.Common.DocString" value="Get all the monitored features."/>
+        </method>
+
+        <method name="Kill">
+            <annotation name="bro.spot.Common.DocString" value="Stop the program."/>
+        </method>
+    </interface>
+
+    <interface name="bro.spot.Spot">
+        <annotation name="bro.spot.Spot.DocString" value="Interface for feature specific purposes (relative to a monitored feature)."/>
+        <method name="Status">
+            <annotation name="bro.spot.Spot.DocString" value="Get the status of a Spot instance."/>
+            <arg type="s" name="feature" direction="out">
+                <annotation name="bro.spot.Spot.DocString" value="The desired feature"/>
+            </arg>
+        </method>
+
+        <method name="Config">
+            <annotation name="bro.spot.Spot.DocString" value="Get the config of a Spot instance."/>
+            <arg type="s" name="feature" direction="out">
+                <annotation name="bro.spot.Spot.DocString" value="The desired feature"/>
+            </arg>
+        </method>
+
+        <method name="Reset">
+            <annotation name="bro.spot.Spot.DocString" value="Reset a Spot instance."/>
+            <arg type="s" name="feature" direction="out">
+                <annotation name="bro.spot.Spot.DocString" value="The desired feature"/>
+            </arg>
+        </method>
+    </interface>
+
+</node>
+

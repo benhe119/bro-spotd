@@ -1,0 +1,13 @@
+Package: bro-spotd-dbgsym
+Package-Type: ddeb
+Source: bro-spotd
+Version: 1.0-1ubuntu1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Alban Siffer <alban.siffer@irisa.fr>
+Installed-Size: 349
+Depends: bro-spotd (= 1.0-1ubuntu1)
+Section: debug
+Priority: optional
+Description: debug symbols for bro-spotd
+Build-Ids: d7902849902c6d56f240bdcae608a93eeae5aadc
