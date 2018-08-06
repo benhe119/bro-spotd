@@ -2,7 +2,7 @@ Source: bro-spotd
 Section: utils
 Priority: optional
 Maintainer: Alban Siffer <alban.siffer@irisa.fr>
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), ${build:Depends}
 Standards-Version: 4.1.2
 Homepage: <insert the upstream URL, if relevant>
 
