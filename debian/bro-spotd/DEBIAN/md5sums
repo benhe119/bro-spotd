@@ -1,4 +1,4 @@
-89b89d1e2100f8d419e50f9d937901ab  usr/bin/bro-spotd
+89b74a3ba9b1d5c3d583be6d7763a28e  usr/bin/bro-spotd
 80f32687b5af8cb6a6d77c2321a37802  usr/share/bro/policy/custom/spot-anomaly.bro
 69f44b19b3e8c45fcd90cff27f1e1f8d  usr/share/dbus-1/interfaces/bro.spot.xml
 a5c75633424e6539486b7d173c689e0e  usr/share/dbus-1/services/bro.spot.service
