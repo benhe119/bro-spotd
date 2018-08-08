@@ -2,7 +2,6 @@
 // Created by asr on 02/07/18.
 //
 
-#include <zconf.h>
 #include "Dbuspotcher.h"
 
 Dbuspotcher::Dbuspotcher(Dispotcher *dsp) : _dsp(dsp)

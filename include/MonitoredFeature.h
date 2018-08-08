@@ -5,7 +5,7 @@
 #ifndef BRO_SPOTD_MONITOREDFEATURE_H
 #define BRO_SPOTD_MONITOREDFEATURE_H
 
-#include "libspot/spot.h"
+#include "spot.h"
 #include "broccoli.h"
 
 /**
