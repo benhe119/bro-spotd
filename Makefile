@@ -127,5 +127,8 @@ install_bro_script:
 	@echo "Updating " $(BRO_SCRIPT_LOAD_DIR)/local.bro
 	@echo "\n# Bro-Spot script (log spot anomalies)\n@load custom/spot-anomaly\n" >> $(BRO_SCRIPT_LOAD_DIR)/local.bro
 
+clean:
+	@rm -rf $(BIN_DIR)/bro_spotd
+	@rm -rf $(BUILD_DIR)/*.o
 
 
