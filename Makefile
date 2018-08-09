@@ -8,6 +8,8 @@ DESTDIR =
 
 VERSION = 1.0
 
+ARCH = $(shell arch)
+
 # Current directory
 CURDIR = $(realpath .)
 
@@ -55,7 +57,7 @@ TARGET = bro-spotd
 # compilo
 CXX = @g++
 CXXFLAGS = -std=c++11 -Wall -pedantic -g -Wl,--no-whole-archive
-INC = -I/usr/include/iniparser -I/usr/include/libspot -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -Iinclude
+INC = -I/usr/include/iniparser -I/usr/include/libspot -I/usr/include/dbus-1.0 -I/usr/lib/$(ARCH)-linux-gnu/dbus-1.0/include -Iinclude
 LIB = -L/usr/lib/x86_64-linux-gnu/
 LDD = -lbroccoli -lspot -liniparser -lpthread -ldbus-1
 
