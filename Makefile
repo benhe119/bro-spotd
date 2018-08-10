@@ -54,10 +54,13 @@ OBJS = $(FILES:.h=.o) main.o
 # library file
 TARGET = bro-spotd
 
+# find the folder of dbus-arch-deps.h
+INC_ARCH = $(shell dirname $(find /usr/lib -type f -iname dbus-arch-deps.h))
+
 # compilo
 CXX = @g++
 CXXFLAGS = -std=c++11 -Wall -pedantic -g -Wl,--no-whole-archive
-INC = -I/usr/include/iniparser -I/usr/include/libspot -I/usr/include/dbus-1.0 -I/usr/lib/$(ARCH)-linux-gnu/dbus-1.0/include -Iinclude
+INC = -I/usr/include/iniparser -I/usr/include/libspot -I/usr/include/dbus-1.0 -I/usr/lib/$(ARCH)-linux-gnu/dbus-1.0/include -Iinclude -I$(INC_ARCH)
 LIB = -L/usr/lib/x86_64-linux-gnu/
 LDD = -lbroccoli -lspot -liniparser -lpthread -ldbus-1
 
@@ -77,6 +80,8 @@ checkdir:
 
 %.o:$(SRC_DIR)/%.cpp
 	@echo "Building" $@ "..."
+	@echo "arch result:" $(ARCH)
+	@echo "find result:" $(INC_ARCH)
 	$(CXX) $(CXXFLAGS) $(INC) $(LIB) -c $< -o $(OBJ_DIR)/$@ $(LDD);
 
 $(TARGET): $(OBJS)
