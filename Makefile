@@ -55,7 +55,7 @@ OBJS = $(FILES:.h=.o) main.o
 TARGET = bro-spotd
 
 # find the folder of dbus-arch-deps.h
-INC_ARCH = $(shell dirname $$(find /usr/lib -type f -iname dbus-arch-deps.h))
+INC_ARCH = $(shell dirname $$(dirname $$(find /usr/lib -type f -iname dbus-arch-deps.h)))
 
 # compilo
 CXX = @g++
