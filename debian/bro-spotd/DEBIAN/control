@@ -4,8 +4,10 @@ Architecture: amd64
 Maintainer: Alban Siffer <alban.siffer@irisa.fr>
 Installed-Size: 186
 Depends: libbroccoli5 (>= 1.97), libc6 (>= 2.4), libdbus-1-3 (>= 1.9.14), libgcc1 (>= 1:3.0), libiniparser1 (>= 4.0), libstdc++6 (>= 6)
+Suggests: bro, bro-aux, bro-common, broctl
 Section: utils
 Priority: optional
 Homepage: <insert the upstream URL, if relevant>
-Description: A Bro IDS client to detect network feature abnormal values
- <insert long description, indented with spaces>
+Description: A Bro IDS client to detect network anomalies
+ bro-spotd combines the Bro IDS engine with the SPOT algorithm so as to monitor network
+ features and detect abnormal behaviors in real-time.

@@ -80,8 +80,6 @@ checkdir:
 
 %.o:$(SRC_DIR)/%.cpp
 	@echo "Building" $@ "..."
-	@echo "arch result:" $(ARCH)
-	@echo "find result:" $(INC_ARCH)
 	$(CXX) $(CXXFLAGS) $(INC) $(LIB) -c $< -o $(OBJ_DIR)/$@ $(LDD);
 
 $(TARGET): $(OBJS)

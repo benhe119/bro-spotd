@@ -10,4 +10,4 @@ Depends: bro-spotd (= 1.0-1ubuntu1)
 Section: debug
 Priority: optional
 Description: debug symbols for bro-spotd
-Build-Ids: 611dd09d409294e0e79249353d79785be52f5126
+Build-Ids: 6b7d76a7fd32f43611f3284a8ca55444ddaa1745
