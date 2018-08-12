@@ -9,5 +9,7 @@ Homepage: <insert the upstream URL, if relevant>
 Package: bro-spotd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: A Bro IDS client to detect network feature abnormal values 
- <insert long description, indented with spaces>
+Suggests: bro, bro-aux, bro-common, broctl
+Description: A Bro IDS client to detect network anomalies
+ bro-spotd combines the Bro IDS engine with the SPOT algorithm so as to monitor network
+ features and detect abnormal behaviors in real-time.

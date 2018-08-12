@@ -77,7 +77,7 @@ int main(int argc, const char *argv[])
 
     parser.define("config", "Path to the config file")
         .alias('c')
-        .with_arg<string>("bro-spotd.ini");
+        .with_arg<string>("/etc/bro-spotd/bro-spotd.ini");
 
     parser.define("bro-ip", "IP address of the Bro controller")
         .alias('i')
